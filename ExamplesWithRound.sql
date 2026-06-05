@@ -1,6 +1,6 @@
 
 SELECT ROUND(12.5,0) AS RoundToNearestWhole 
-	-- Rounds to the nearest whole number, which is 12
+	-- Rounds to the nearest whole number, which is 13
 	, ROUND(12.4999,0) AS RoundToNearestWhole
 	-- Rounds to the nearest whole number, which is 12
 	, ROUND(12.4999,1) AS RoundToOneDec
