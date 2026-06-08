@@ -12,8 +12,7 @@ WHERE InvoiceTotal - PaymentTotal - CreditTotal > 0;
 -- 2.
 -- Create a query that counts the number of invoices, 
 -- and finds the highest and lowest invoice totals 
--- for invoices dated before 7/1/2022, 
--- and after 7/1/2022. 
+-- for invoices dated and after 7/1/2022. 
 SELECT COUNT(*) AS NumberOfInvoices
 	, MAX(InvoiceTotal) AS HighestInvoiceTotal
 	, MIN(InvoiceTotal) AS LowestInvoiceTotal
@@ -28,11 +27,11 @@ FROM Invoices
 GROUP BY VendorID
 
 -- 4.
--- Create a query that counts the number of invoices
--- and calculates the average invoice total grouping by vendor name.
--- Only display invoices with a total greater than $500.
--- Sort the results by the number of invoices in 
--- descending order.
+-- Create a query that counts the total number of invoices
+-- and calculates the average invoice total, grouping by 
+-- vendor name. Only display vendors with an average invoice
+-- total greater than $2000. Sort the results by the number 
+-- of invoices in descending order.
 -- HINT: This query requires a join to the Vendors table
 -- to get the VendorName.
 SELECT VendorName
@@ -41,8 +40,8 @@ SELECT VendorName
 FROM Vendors v
 	INNER JOIN Invoices i
 		ON v.VendorID = i.VendorID 
-WHERE InvoiceTotal > 500 
 GROUP BY VendorName 
+HAVING AVG(InvoiceTotal) > 2000
 ORDER BY InvoiceQty DESC
 
 
