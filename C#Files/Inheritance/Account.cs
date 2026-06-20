@@ -2,8 +2,8 @@
 
 public class Account
 {
-   private int id;
-   protected decimal balance;
+    private int id;
+    protected decimal balance;
 	private string owner;
 	protected int numXact = 0;	// number of transactions
 	public Account(decimal balance, string owner, int id)
