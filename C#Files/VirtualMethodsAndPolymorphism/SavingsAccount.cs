@@ -51,4 +51,10 @@ public class SavingsAccount : Account
             return "Savings: ";
         }
     }
+
+    override public void MonthEnd()
+    {
+		base.MonthEnd();
+		minBalance = balance;
+    }
 }
