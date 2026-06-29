@@ -12,8 +12,8 @@ namespace EFCoreConsoleDemo1
 
             //AddOneProduct();
             //AddOneVendor();
-            AddManyProducts();
-            AddManyVendors();
+            //AddManyProducts();
+            //AddManyVendors();
 
             //RemoveFirstProduct();
             //RemoveLastProduct();
@@ -21,8 +21,8 @@ namespace EFCoreConsoleDemo1
             //ChangeVendorName();
             //IncreasePriceForVendor();
 
-            GetAllProducts(); //Try this again after adding back Vendor table.
-            GetAllVendors();  //Try this again after adding back Vendor table.
+            //GetAllProducts();
+            //GetAllVendors();
 
             //GetProductsUnder100();
             //GetAllProductsUsingVendorId();
