@@ -30,9 +30,7 @@ namespace EFCoreConsoleDemo1
             //GetVendorByState();
 
             //SearchProductUsingContains();
-
-
-            CheckVendorHasProducts();
+            //CheckVendorHasProducts();
 
             Console.WriteLine();
             Console.WriteLine("Complete");
