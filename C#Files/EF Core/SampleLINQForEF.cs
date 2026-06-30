@@ -53,7 +53,7 @@ namespace EFCoreConsoleDemo1
 
             foreach (var product in allProducts)
             {
-                Console.WriteLine($"{product.Name} - ${product.Price} (Vendor: {product.Vendor?.Name})");
+                Console.WriteLine($"{product.Name} - ${product.Price}");
             }
         }
 
